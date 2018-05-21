@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=Sanchez");
+
+body {
+  background: url("http://static.simpledesktops.com/uploads/desktops/2015/11/18/garlic_siracha.png");
+  background-size: cover;
+  color: white;
+  display: flex;
+  height: 100%;
+  font-family: "Sanchez", serif;
+  justify-content: center;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 span {
+  display: block;
+  margin: 11px 0 17px 0;
+  font-size: 60px;
+  line-height: 80px;
+  letter-spacing: -2px;
+  color: #f1ebe5;
+  text-shadow: 0 13.36px 8.896px #141414, 0 -2px 1px #fff;
+  letter-spacing: -4px;
+}
+
+h2 {
+  color: white;
+  text-shadow: #000 3px 3px;
+  font-size: 25px;
+}
+
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#wrapper {
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  padding: 10px;
+}
+.boxes {
+  padding: 40px;
+  background: black;
+  opacity: 0.5;
+  float: left;
+  border-radius: 25px;
+}
+
+.boxes1 {
+  padding: 30px;
+  background: black;
+  opacity: 0.5;
+  border-radius: 25px;
+}
+
+/*Checkboxes styles*/
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  font-family: "Sanchez", serif;
+  font-size: 20px;
+  color: #ddd;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label:last-child {
+  margin-bottom: 0;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #8ed4f1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.6;
+  -webkit-transition: all 0.12s, border-color 0.08s;
+  transition: all 0.12s, border-color 0.08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* */
+button {
+  background: none;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 1em;
+  font-weight: 1000;
+  margin: 1em auto;
+  padding: 2em 6em;
+  position: relative;
+  text-transform: uppercase;
+  overflow: hidden;
+  font-family: "Sanchez", serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+button::before,
+button::after {
+  background: #fff;
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: black;
+}
+
+button::after {
+  /*background-color: #f00;*/
+  height: 70%;
+  left: -35%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+}
+
+button:hover:after {
+  height: 100%;
+  width: 135%;
+}
+
+#icon {
+  width: 80px;
+  margin-top: -1em;
+  transform: rotate(-20deg);
+}
+
+/* Borough Page Styling*/
+.container {
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 3em;
+}
+
+li {
+  list-style: none;
+  text-align: left;
+}
+
+.left_div {
+  background: black;
+  opacity: 0.5;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  width: 400px;
+  height: 400px;
+  float: left;
+  margin-right: 2em;
+  border: 5px solid black;
+  border-radius: 7px;
+  overflow: auto;
+}
+
+.map_div {
+  width: 700px;
+  height: 400px;
+  float: right;
+  padding-right: 5em;
+}
+
+.info_div {
+  background: black;
+  opacity: 0.5;
+  margin-top: 1em;
+  margin-left: 32em;
+  width: 600px;
+  border-radius: 7px;
+  overflow: hidden;
+}
